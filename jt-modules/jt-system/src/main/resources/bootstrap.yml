@@ -1,0 +1,20 @@
+server:
+  port: 9201
+
+spring:
+  application:
+    name: jt-system
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.186.128:8001
+      config:
+        server-addr: 192.168.186.128:8001
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+

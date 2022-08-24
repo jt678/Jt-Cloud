@@ -1,0 +1,3 @@
+com.jt.system.feign.demote.DemoteUserFallback
+com.jt.system.feign.demote.DemoteLogFallback
+com.jt.system.feign.demote.DemoteFileFallback
